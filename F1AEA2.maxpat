@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 1372.0, 787.0 ],
+		"rect" : [ 485.0, 207.0, 1372.0, 787.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -416,7 +416,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 34.0, 105.0, 1372.0, 761.0 ],
+						"rect" : [ 0.0, 26.0, 1372.0, 761.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -457,10 +457,9 @@
 									"lockedsize" : 0,
 									"maxclass" : "bpatcher",
 									"name" : "vst-synth.maxpat",
-									"numinlets" : 1,
-									"numoutlets" : 2,
+									"numinlets" : 0,
+									"numoutlets" : 0,
 									"offset" : [ 0.0, 0.0 ],
-									"outlettype" : [ "signal", "signal" ],
 									"patching_rect" : [ 11.0, 13.0, 352.0, 357.0 ],
 									"viewvisibility" : 1
 								}
@@ -939,9 +938,8 @@
 								"box" : 								{
 									"id" : "obj-19",
 									"maxclass" : "newobj",
-									"numinlets" : 16,
-									"numoutlets" : 2,
-									"outlettype" : [ "signal", "signal" ],
+									"numinlets" : 0,
+									"numoutlets" : 0,
 									"patching_rect" : [ 395.0, 663.0, 176.5, 22.0 ],
 									"text" : "nn~ vintage decode"
 								}
@@ -951,9 +949,8 @@
 								"box" : 								{
 									"id" : "obj-18",
 									"maxclass" : "newobj",
-									"numinlets" : 16,
-									"numoutlets" : 2,
-									"outlettype" : [ "signal", "signal" ],
+									"numinlets" : 0,
+									"numoutlets" : 0,
 									"patching_rect" : [ 576.0, 663.0, 176.5, 22.0 ],
 									"text" : "nn~ vintage decode"
 								}
@@ -985,9 +982,8 @@
 								"box" : 								{
 									"id" : "obj-11",
 									"maxclass" : "newobj",
-									"numinlets" : 4,
-									"numoutlets" : 2,
-									"outlettype" : [ "signal", "signal" ],
+									"numinlets" : 0,
+									"numoutlets" : 0,
 									"patching_rect" : [ 62.0, 663.0, 133.0, 22.0 ],
 									"text" : "nn~ percussion decode"
 								}
@@ -1257,7 +1253,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1372.0, 761.0 ],
+						"rect" : [ 485.0, 233.0, 1372.0, 761.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1800,7 +1796,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 3,
 									"numoutlets" : 1,
-									"outlettype" : [ "float" ],
+									"outlettype" : [ "" ],
 									"patching_rect" : [ 814.0, 381.026315000000011, 65.0, 22.0 ],
 									"text" : "normalizer",
 									"varname" : "patcher[6]"
@@ -1813,7 +1809,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 3,
 									"numoutlets" : 1,
-									"outlettype" : [ "float" ],
+									"outlettype" : [ "" ],
 									"patching_rect" : [ 711.0, 381.026315000000011, 65.0, 22.0 ],
 									"text" : "normalizer",
 									"varname" : "patcher[5]"
@@ -1826,7 +1822,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 3,
 									"numoutlets" : 1,
-									"outlettype" : [ "float" ],
+									"outlettype" : [ "" ],
 									"patching_rect" : [ 604.0, 381.026315000000011, 65.0, 22.0 ],
 									"text" : "normalizer",
 									"varname" : "patcher[4]"
@@ -1839,7 +1835,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 3,
 									"numoutlets" : 1,
-									"outlettype" : [ "float" ],
+									"outlettype" : [ "" ],
 									"patching_rect" : [ 501.0, 381.026315000000011, 65.0, 22.0 ],
 									"text" : "normalizer",
 									"varname" : "patcher[3]"
@@ -1852,7 +1848,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 3,
 									"numoutlets" : 1,
-									"outlettype" : [ "float" ],
+									"outlettype" : [ "" ],
 									"patching_rect" : [ 397.0, 381.026315000000011, 65.0, 22.0 ],
 									"text" : "normalizer",
 									"varname" : "patcher[2]"
@@ -1865,7 +1861,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 3,
 									"numoutlets" : 1,
-									"outlettype" : [ "float" ],
+									"outlettype" : [ "" ],
 									"patching_rect" : [ 298.0, 381.026315000000011, 65.0, 22.0 ],
 									"text" : "normalizer",
 									"varname" : "patcher[1]"
@@ -1968,7 +1964,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 3,
 									"numoutlets" : 1,
-									"outlettype" : [ "float" ],
+									"outlettype" : [ "" ],
 									"patching_rect" : [ 193.0, 381.026315000000011, 65.0, 22.0 ],
 									"text" : "normalizer",
 									"varname" : "patcher"
@@ -2653,26 +2649,11 @@
  ],
 		"lines" : [  ],
 		"parameters" : 		{
-			"obj-1::obj-34::obj-29::obj-13" : [ "live.numbox[296]", "live.numbox", 0 ],
-			"obj-1::obj-34::obj-29::obj-15" : [ "live.text[528]", "live.text", 0 ],
-			"obj-1::obj-56::obj-29::obj-13" : [ "live.numbox[1]", "live.numbox", 0 ],
-			"obj-1::obj-56::obj-29::obj-15" : [ "live.text[1]", "live.text", 0 ],
-			"obj-1::obj-57::obj-29::obj-13" : [ "live.numbox[2]", "live.numbox", 0 ],
-			"obj-1::obj-57::obj-29::obj-15" : [ "live.text[2]", "live.text", 0 ],
-			"obj-1::obj-58::obj-29::obj-13" : [ "live.numbox[3]", "live.numbox", 0 ],
-			"obj-1::obj-58::obj-29::obj-15" : [ "live.text[3]", "live.text", 0 ],
-			"obj-1::obj-59::obj-29::obj-13" : [ "live.numbox[4]", "live.numbox", 0 ],
-			"obj-1::obj-59::obj-29::obj-15" : [ "live.text[4]", "live.text", 0 ],
-			"obj-1::obj-60::obj-29::obj-13" : [ "live.numbox[5]", "live.numbox", 0 ],
-			"obj-1::obj-60::obj-29::obj-15" : [ "live.text[5]", "live.text", 0 ],
-			"obj-1::obj-61::obj-29::obj-13" : [ "live.numbox[6]", "live.numbox", 0 ],
-			"obj-1::obj-61::obj-29::obj-15" : [ "live.text[6]", "live.text", 0 ],
 			"obj-1::obj-7" : [ "live.gain~", "live.gain~", 0 ],
 			"obj-3::obj-3" : [ "Glide", "Glide", 0 ],
 			"obj-3::obj-31" : [ "Gain", "Gain", 0 ],
 			"obj-3::obj-71" : [ "Transp", "Transp", 0 ],
 			"obj-3::obj-74" : [ "Quality", "Quality", 0 ],
-			"obj-4::obj-1::obj-181" : [ "vst~", "vst~", 0 ],
 			"parameterbanks" : 			{
 				"0" : 				{
 					"index" : 0,
@@ -2682,79 +2663,14 @@
 
 			}
 ,
-			"parameter_overrides" : 			{
-				"obj-1::obj-56::obj-29::obj-13" : 				{
-					"parameter_longname" : "live.numbox[1]"
-				}
-,
-				"obj-1::obj-56::obj-29::obj-15" : 				{
-					"parameter_longname" : "live.text[1]"
-				}
-,
-				"obj-1::obj-57::obj-29::obj-13" : 				{
-					"parameter_longname" : "live.numbox[2]"
-				}
-,
-				"obj-1::obj-57::obj-29::obj-15" : 				{
-					"parameter_longname" : "live.text[2]"
-				}
-,
-				"obj-1::obj-58::obj-29::obj-13" : 				{
-					"parameter_longname" : "live.numbox[3]"
-				}
-,
-				"obj-1::obj-58::obj-29::obj-15" : 				{
-					"parameter_longname" : "live.text[3]"
-				}
-,
-				"obj-1::obj-59::obj-29::obj-13" : 				{
-					"parameter_longname" : "live.numbox[4]"
-				}
-,
-				"obj-1::obj-59::obj-29::obj-15" : 				{
-					"parameter_longname" : "live.text[4]"
-				}
-,
-				"obj-1::obj-60::obj-29::obj-13" : 				{
-					"parameter_longname" : "live.numbox[5]"
-				}
-,
-				"obj-1::obj-60::obj-29::obj-15" : 				{
-					"parameter_longname" : "live.text[5]"
-				}
-,
-				"obj-1::obj-61::obj-29::obj-13" : 				{
-					"parameter_longname" : "live.numbox[6]"
-				}
-,
-				"obj-1::obj-61::obj-29::obj-15" : 				{
-					"parameter_longname" : "live.text[6]"
-				}
-
-			}
-,
 			"inherited_shortname" : 1
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "Sitar-Calm--14.wav",
-				"bootpath" : "~/Documents/GitHub/F1AEA2/andrea",
-				"patcherrelativepath" : "./andrea",
+				"bootpath" : "/Volumes/Main_SSD_4TB/Hackathon/F1AEA2/resources",
+				"patcherrelativepath" : "./resources",
 				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "a-mo.settings.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/modulo/misc/abstractions",
-				"patcherrelativepath" : "../../Max 8/Packages/modulo/misc/abstractions",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "feature-buffer-visualizer.js",
-				"bootpath" : "~/Documents/GitHub/F1AEA2/andrea",
-				"patcherrelativepath" : "./andrea",
-				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
@@ -2766,36 +2682,8 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "mo.smooth.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/modulo/patchers/transform",
-				"patcherrelativepath" : "../../Max 8/Packages/modulo/patchers/transform",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "nn~.mxo",
 				"type" : "iLaX"
-			}
-, 			{
-				"name" : "normalizer.maxpat",
-				"bootpath" : "~/Documents/GitHub/F1AEA2/andrea",
-				"patcherrelativepath" : "./andrea",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "visualizer.maxpat",
-				"bootpath" : "~/Documents/GitHub/F1AEA2/andrea",
-				"patcherrelativepath" : "./andrea",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "vst-synth.maxpat",
-				"bootpath" : "~/Documents/GitHub/F1AEA2/mihai",
-				"patcherrelativepath" : "./mihai",
-				"type" : "JSON",
-				"implicit" : 1
 			}
  ],
 		"autosave" : 0
