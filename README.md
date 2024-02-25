@@ -1,4 +1,4 @@
-# F1AEA2 team for the Hackathon
+# #F1AEA2
 
 ## Description
 
