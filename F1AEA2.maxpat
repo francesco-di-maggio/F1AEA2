@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 1372.0, 787.0 ],
+		"rect" : [ 34.0, 79.0, 1196.0, 787.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -57,7 +57,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1372.0, 761.0 ],
+						"rect" : [ 0.0, 26.0, 1196.0, 761.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -257,7 +257,7 @@
 									"offset" : [ 0.0, 0.0 ],
 									"patching_rect" : [ 52.0, 360.0, 886.0, 478.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 0.0, 0.0, 884.0, 476.0 ],
+									"presentation_rect" : [ 0.0, 0.0, 955.0, 514.0 ],
 									"viewvisibility" : 1
 								}
 
@@ -388,7 +388,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1372.0, 761.0 ],
+						"rect" : [ 0.0, 26.0, 1196.0, 761.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -1416,7 +1416,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1372.0, 761.0 ],
+						"rect" : [ 0.0, 26.0, 1196.0, 761.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -1589,6 +1589,7 @@
 							}
 , 							{
 								"box" : 								{
+									"htabcolor" : [ 0.674509803921569, 0.682352941176471, 0.686274509803922, 1.0 ],
 									"id" : "obj-38",
 									"maxclass" : "tab",
 									"numinlets" : 1,
@@ -2204,12 +2205,10 @@
 								"box" : 								{
 									"id" : "obj-6",
 									"maxclass" : "newobj",
-									"numinlets" : 2,
+									"numinlets" : 4,
 									"numoutlets" : 0,
-									"patching_rect" : [ 312.333333333333371, 880.0, 35.0, 22.0 ],
-									"presentation" : 1,
-									"presentation_rect" : [ 343.0, 430.0, 35.0, 22.0 ],
-									"text" : "dac~"
+									"patching_rect" : [ 312.333333333333371, 880.0, 75.0, 22.0 ],
+									"text" : "dac~ 1 2 3 4"
 								}
 
 							}
@@ -2367,14 +2366,14 @@
 									"parameter_enable" : 1,
 									"patching_rect" : [ 312.333333333333371, 807.0, 247.0, 47.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 343.0, 357.0, 260.0, 47.0 ],
+									"presentation_rect" : [ 343.0, 402.0, 260.0, 47.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
 											"parameter_longname" : "live.gain~[4]",
 											"parameter_mmax" : 6.0,
 											"parameter_mmin" : -70.0,
 											"parameter_modmode" : 3,
-											"parameter_shortname" : "master",
+											"parameter_shortname" : "output",
 											"parameter_type" : 0,
 											"parameter_unitstyle" : 4
 										}
@@ -2666,9 +2665,26 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-6", 1 ],
-									"midpoints" : [ 378.833333333333371, 867.0, 337.833333333333371, 867.0 ],
+									"destination" : [ "obj-6", 3 ],
+									"order" : 0,
 									"source" : [ "obj-31", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-6", 1 ],
+									"midpoints" : [ 378.833333333333371, 867.0, 340.500000000000057, 867.0 ],
+									"order" : 1,
+									"source" : [ "obj-31", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-6", 2 ],
+									"order" : 0,
+									"source" : [ "obj-31", 0 ]
 								}
 
 							}
@@ -2676,6 +2692,7 @@
 								"patchline" : 								{
 									"destination" : [ "obj-6", 0 ],
 									"midpoints" : [ 321.833333333333371, 855.0, 321.833333333333371, 855.0 ],
+									"order" : 1,
 									"source" : [ "obj-31", 0 ]
 								}
 
@@ -3141,7 +3158,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 34.0, 105.0, 1372.0, 761.0 ],
+						"rect" : [ 34.0, 105.0, 1196.0, 761.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -3435,9 +3452,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 1187.5, 807.0, 61.0, 61.0 ],
-									"presentation" : 1,
-									"presentation_rect" : [ 998.0, 366.0, 61.0, 61.0 ]
+									"patching_rect" : [ 1187.5, 807.0, 61.0, 61.0 ]
 								}
 
 							}
@@ -3498,8 +3513,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 1187.5, 305.0, 316.0, 29.0 ],
-									"presentation" : 1,
-									"presentation_rect" : [ 806.0, 382.0, 180.0, 29.0 ],
 									"text" : "onset detection ->"
 								}
 
@@ -5833,6 +5846,8 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 766.5, 325.0, 66.0, 22.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 650.0, 385.5, 66.0, 22.0 ],
 									"text" : "fluid.mfcc~"
 								}
 
@@ -5875,26 +5890,13 @@
 , 							{
 								"box" : 								{
 									"basictuning" : 440,
-									"clipheight" : 78.5,
+									"clipheight" : 158.0,
 									"data" : 									{
 										"clips" : [ 											{
 												"absolutepath" : "Sitar-Calm--14.wav",
 												"filename" : "Sitar-Calm--14.wav",
 												"filekind" : "audiofile",
 												"id" : "u747005603",
-												"selection" : [ 0.0, 1.0 ],
-												"loop" : 1,
-												"content_state" : 												{
-													"loop" : 1
-												}
-
-											}
-, 											{
-												"absolutepath" : "Guitar - Scratched strings.wav",
-												"filename" : "Guitar - Scratched strings.wav",
-												"filekind" : "audiofile",
-												"id" : "u619003207",
-												"selection" : [ 0.0, 1.0 ],
 												"loop" : 1,
 												"content_state" : 												{
 													"loop" : 1
@@ -5918,9 +5920,10 @@
 									"patching_rect" : [ 204.5, 35.0, 500.0, 159.0 ],
 									"pitchcorrection" : 0,
 									"presentation" : 1,
-									"presentation_rect" : [ 38.5, 71.0, 500.0, 159.0 ],
+									"presentation_rect" : [ 38.5, 71.0, 1086.5, 159.0 ],
 									"quality" : "basic",
-									"timestretch" : [ 0 ]
+									"timestretch" : [ 0 ],
+									"waveformdisplay" : 0
 								}
 
 							}
@@ -6270,10 +6273,10 @@
 								"box" : 								{
 									"id" : "obj-5",
 									"maxclass" : "newobj",
-									"numinlets" : 2,
+									"numinlets" : 4,
 									"numoutlets" : 0,
-									"patching_rect" : [ 426.0, 320.5, 35.0, 22.0 ],
-									"text" : "dac~"
+									"patching_rect" : [ 426.0, 320.5, 75.0, 22.0 ],
+									"text" : "dac~ 1 2 3 4"
 								}
 
 							}
@@ -6285,6 +6288,8 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 41.5, 319.0, 116.0, 22.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 47.0, 441.0, 116.0, 22.0 ],
 									"text" : "fluid.spectralshape~"
 								}
 
@@ -6779,7 +6784,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-5", 1 ],
+									"destination" : [ "obj-5", 3 ],
 									"order" : 0,
 									"source" : [ "obj-7", 0 ]
 								}
@@ -6787,8 +6792,24 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-5", 0 ],
+									"destination" : [ "obj-5", 2 ],
 									"order" : 1,
+									"source" : [ "obj-7", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-5", 1 ],
+									"order" : 2,
+									"source" : [ "obj-7", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-5", 0 ],
+									"order" : 3,
 									"source" : [ "obj-7", 0 ]
 								}
 
@@ -7123,7 +7144,7 @@
 			"obj-1::obj-89::obj-7::obj-29::obj-15" : [ "live.text[24]", "live.text", 0 ],
 			"obj-1::obj-89::obj-8::obj-29::obj-13" : [ "live.numbox[23]", "live.numbox", 0 ],
 			"obj-1::obj-89::obj-8::obj-29::obj-15" : [ "live.text[23]", "live.text", 0 ],
-			"obj-3::obj-31" : [ "live.gain~[4]", "master", 0 ],
+			"obj-3::obj-31" : [ "live.gain~[4]", "output", 0 ],
 			"obj-3::obj-5" : [ "live.gain~[7]", "input", 0 ],
 			"obj-4::obj-181" : [ "vst~", "vst~", 0 ],
 			"parameterbanks" : 			{
@@ -7302,13 +7323,6 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "Guitar - Scratched strings.wav",
-				"bootpath" : "~/Documents/GitHub/F1AEA2/resources",
-				"patcherrelativepath" : "./resources",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "Sitar-Calm--14.wav",
 				"bootpath" : "~/Documents/GitHub/F1AEA2/resources",
 				"patcherrelativepath" : "./resources",
