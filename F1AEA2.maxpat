@@ -90,7 +90,6 @@
 					}
 ,
 					"patching_rect" : [ 24.0, 138.0, 58.0, 22.0 ],
-					"presentation_linecount" : 3,
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -417,7 +416,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1372.0, 761.0 ],
+						"rect" : [ 34.0, 105.0, 1372.0, 761.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -448,93 +447,30 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
-									"id" : "obj-5",
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 58.0, 308.0, 35.0, 22.0 ],
-									"text" : "open"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"autosave" : 1,
 									"bgmode" : 0,
 									"border" : 0,
 									"clickthrough" : 0,
+									"enablehscroll" : 0,
+									"enablevscroll" : 0,
 									"id" : "obj-1",
-									"maxclass" : "newobj",
-									"numinlets" : 2,
-									"numoutlets" : 8,
-									"offset" : [ 0.0, 0.0 ],
-									"outlettype" : [ "signal", "signal", "", "list", "int", "", "", "" ],
-									"patching_rect" : [ 58.0, 351.0, 92.5, 22.0 ],
-									"save" : [ "#N", "vst~", "loaduniqueid", 0, ";" ],
-									"saved_attribute_attributes" : 									{
-										"valueof" : 										{
-											"parameter_invisible" : 1,
-											"parameter_longname" : "vst~",
-											"parameter_modmode" : 0,
-											"parameter_shortname" : "vst~",
-											"parameter_type" : 3
-										}
-
-									}
-,
-									"saved_object_attributes" : 									{
-										"parameter_enable" : 1,
-										"parameter_mappable" : 0
-									}
-,
-									"text" : "vst~",
-									"varname" : "vst~",
-									"viewvisibility" : 0
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"connections" : [ 										{
-											"in" : 1,
-											"out" : 3,
-											"gain" : 1.0
-										}
- ],
-									"dividers" : "none",
-									"fontface" : 0,
-									"fontname" : "Arial",
-									"fontsize" : 12.0,
-									"id" : "obj-13",
-									"incolormap" : "none",
-									"inlabels" : [ "Centroid", "Spread", "Skewness", "Kurtosis", "Rolloff", "Flatness", "Crest" ],
-									"maxclass" : "crosspatch",
+									"lockeddragscroll" : 0,
+									"lockedsize" : 0,
+									"maxclass" : "bpatcher",
+									"name" : "vst-synth.maxpat",
 									"numinlets" : 1,
-									"numins" : 7,
 									"numoutlets" : 2,
-									"numouts" : 7,
-									"outcolormap" : "none",
-									"outlabels" : [ "1", "2", "3", "4", "5", "6", "7" ],
-									"outlettype" : [ "", "dictionary" ],
-									"parameter_enable" : 0,
-									"patching_rect" : [ 58.0, 67.0, 274.0, 147.0 ]
+									"offset" : [ 0.0, 0.0 ],
+									"outlettype" : [ "signal", "signal" ],
+									"patching_rect" : [ 11.0, 13.0, 352.0, 357.0 ],
+									"viewvisibility" : 1
 								}
 
 							}
  ],
-						"lines" : [ 							{
-								"patchline" : 								{
-									"destination" : [ "obj-1", 0 ],
-									"source" : [ "obj-5", 0 ]
-								}
-
-							}
- ]
+						"lines" : [  ]
 					}
 ,
 					"patching_rect" : [ 24.0, 110.0, 41.0, 22.0 ],
-					"presentation_linecount" : 2,
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -1321,7 +1257,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 34.0, 105.0, 1372.0, 761.0 ],
+						"rect" : [ 0.0, 26.0, 1372.0, 761.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -2736,7 +2672,7 @@
 			"obj-3::obj-31" : [ "Gain", "Gain", 0 ],
 			"obj-3::obj-71" : [ "Transp", "Transp", 0 ],
 			"obj-3::obj-74" : [ "Quality", "Quality", 0 ],
-			"obj-4::obj-1" : [ "vst~", "vst~", 0 ],
+			"obj-4::obj-1::obj-181" : [ "vst~", "vst~", 0 ],
 			"parameterbanks" : 			{
 				"0" : 				{
 					"index" : 0,
@@ -2803,21 +2739,21 @@
 		"dependency_cache" : [ 			{
 				"name" : "Sitar-Calm--14.wav",
 				"bootpath" : "~/Documents/GitHub/F1AEA2/andrea",
-				"patcherrelativepath" : "../Documents/GitHub/F1AEA2/andrea",
+				"patcherrelativepath" : "./andrea",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "a-mo.settings.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/modulo/misc/abstractions",
-				"patcherrelativepath" : "../Documents/Max 8/Packages/modulo/misc/abstractions",
+				"patcherrelativepath" : "../../Max 8/Packages/modulo/misc/abstractions",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "feature-buffer-visualizer.js",
 				"bootpath" : "~/Documents/GitHub/F1AEA2/andrea",
-				"patcherrelativepath" : "../Documents/GitHub/F1AEA2/andrea",
+				"patcherrelativepath" : "./andrea",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
@@ -2832,7 +2768,7 @@
 , 			{
 				"name" : "mo.smooth.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/modulo/patchers/transform",
-				"patcherrelativepath" : "../Documents/Max 8/Packages/modulo/patchers/transform",
+				"patcherrelativepath" : "../../Max 8/Packages/modulo/patchers/transform",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -2843,14 +2779,21 @@
 , 			{
 				"name" : "normalizer.maxpat",
 				"bootpath" : "~/Documents/GitHub/F1AEA2/andrea",
-				"patcherrelativepath" : "../Documents/GitHub/F1AEA2/andrea",
+				"patcherrelativepath" : "./andrea",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "visualizer.maxpat",
 				"bootpath" : "~/Documents/GitHub/F1AEA2/andrea",
-				"patcherrelativepath" : "../Documents/GitHub/F1AEA2/andrea",
+				"patcherrelativepath" : "./andrea",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vst-synth.maxpat",
+				"bootpath" : "~/Documents/GitHub/F1AEA2/mihai",
+				"patcherrelativepath" : "./mihai",
 				"type" : "JSON",
 				"implicit" : 1
 			}
