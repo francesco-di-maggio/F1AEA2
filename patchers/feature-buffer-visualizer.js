@@ -14,19 +14,22 @@ var foreground_colours = [
     [0.854, 0.653, 0.941, alpha],
     [0.733, 0.843, 0.733, alpha],
     [0.729, 0.584, 0.929, alpha]
-];
+]; 
 
-var features = [0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.];
-var prev_line_positions = [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0]];
+var features = [0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.];
+var prev_line_positions = [
+	[0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0],
+	[0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0]
+];
 var progress = 0.0;
 var feature_lables =  [
-	"centroid", "spread", "skewness", "kurtosis", "rolloff", "flatness", "crest", "-", 
+	"centroid", "spread", "skewness", "kurtosis", "rolloff", "flatness", "crest", 
 	"mfcc-1", "mfcc-2", "mfcc-3", "mfcc-4", "mfcc-5", "mfcc-6", "mfcc-7", "mfcc-8", 
 	"mfcc-9", "mfcc-10", "mfcc-11", "mfcc-12", "mfcc-13"
 ];
 var active_features = [
 	true, true, true, true, true, true, true, 
-	false, false, false, false, false, false, false, false, false, false, false, false, false, false];
+	false, false, false, false, false, false, false, false, false, false, false, false, false];
 
 clear();
 
@@ -34,7 +37,10 @@ function clear()
 {
 	draw_labels();
 	progress = 0.0;
-	prev_line_positions = [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0]];
+	prev_line_positions = [
+	[0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0],
+	[0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0]
+];
 	refresh();
 }
 
@@ -54,7 +60,8 @@ function draw_labels(){
 				y = height - 7;
 				fontsize(12);
 				moveto(screentoworld(x, y));
-				glcolor(foreground_colours[active_feature_increment % number_of_colours_available]);
+				var col = active_feature_increment % number_of_colours_available;
+				glcolor(foreground_colours[col]);
 				text(feature_lables[i]);
 				active_feature_increment += 1;
 			}
@@ -93,11 +100,11 @@ function draw()
 	var width = box.rect[2] - box.rect[0];
 	var height = box.rect[3] - box.rect[1];
 	
-	with (sketch) {
-		// glclearcolor(colour_black);
-		// glclear();			
+	with (sketch) {			
 		
-		for(var i = 0; i < 8; i += 1)
+		active_feature_increment = 0;
+		
+		for(var i = 0; i < feature_count; i += 1)
 		{
 			x1 = prev_line_positions[i][0];
 			y1 = prev_line_positions[i][1];
@@ -107,9 +114,12 @@ function draw()
 			prev_line_positions[i][1] = y2;
 			
 			if(active_features[i]){
-				glcolor(foreground_colours[i]);
+				
+				var col = active_feature_increment % number_of_colours_available;
+				glcolor(foreground_colours[col]);
 				moveto(screentoworld(x1, y1));
-				lineto(screentoworld(x2, y2));				
+				lineto(screentoworld(x2, y2));	
+				active_feature_increment += 1;			
 			}
 		}
 	}
